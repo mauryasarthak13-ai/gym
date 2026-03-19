@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak' Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+    <style>
+     /* css reset */
+    body{
+        font-family: cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(sarthak.jpg);
+    }
+    .left{
+         position: absolute;
+         padding: 2px 0px;
+         top: 20px;
+         left: 60px;
+        display: inline-block;
+         border: 2px solid red;
+    }
+    .left img{ 
+        padding-left: 20px;
+        width: 136px;
+        filter: invert(100%);
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px; 
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        border: 2px solid green ;
+    }
+    .right{
+        position: absolute;
+        top: 30px;
+        right: 34px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+   .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+     .navbar li a:hover, .navbar li {
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{ 
+        font-family: cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 4px 14px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+       border: 2px solid white;
+       margin: 150px 550px;
+       padding: 80px 80px;
+       width: 35%;
+       border-radius: 20px
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-family: cursive;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 300px;
+        margin: 20px auto;
+    }
+    </style>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <header class="head">
+        <!-- Left box for logo -->
+    <div class="left">
+    <img src="gym.png" alt="Logo">
+    <div>Sarthak Fitness</div>
+    </div>
+    <!-- Mid box for nav -->
+    <div class="mid">
+     <ul class="navbar">
+        <li><a href="https://youtube.com" >Home</a></li>
+        <li><a href="https://whatsapp.com">About us</a></li>
+        <li><a href="#">Fitness calculator</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    </div>
+    <!-- Right box buttons  -->
+    <div class="right">
+    <button class="btn">Call us now </button>
+    <button class="btn">Email us</button>
+    </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of U.P now</h1>
+        <form action="submit.html">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name...">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age...">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender...">
+            </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Weight...">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
