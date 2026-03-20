@@ -105,6 +105,91 @@
         .sar{
             color: white;
         }
+        /* ================= RESPONSIVE DESIGN ================= */
+
+/* For tablets */
+@media (max-width: 1024px) {
+    .container {
+        margin: 100px auto;
+        width: 70%;
+        padding: 40px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .mid {
+        width: 70%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+
+    .left {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .mid {
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .right {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        margin: 50px auto;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-group input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .container button {
+        width: 100%;
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        font-size: 18px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
     </style>
 <link rel="stylesheet" href="css/style.css">
 <body>
