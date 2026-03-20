@@ -14,6 +14,9 @@
         margin: 0px;
         padding: 0px;
         background: url(sarthak.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .left{
          position: absolute;
@@ -105,89 +108,65 @@
         .sar{
             color: white;
         }
-        /* ================= RESPONSIVE DESIGN ================= */
+       /* ===== MOBILE FIX (NO CHANGE TO DESKTOP) ===== */
+@media (max-width: 768px) {
 
-/* For tablets */
-@media (max-width: 1024px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
     .container {
-        margin: 100px auto;
-        width: 70%;
-        padding: 40px;
+        margin: 40px auto;
+        width: 90%;
+        padding: 20px;
     }
 
     .form-group input {
         width: 100%;
+        font-size: 16px;
+        padding: 10px;
     }
 
-    .mid {
-        width: 70%;
-    }
-}
-
-/* For mobile devices */
-@media (max-width: 768px) {
-
-    .left {
-        position: static;
-        display: block;
-        text-align: center;
-        margin: 10px auto;
-    }
-
-    .mid {
-        width: 100%;
-        margin: 10px auto;
+    .navbar {
         text-align: center;
     }
 
     .navbar li {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
     .navbar li a {
-        padding: 10px;
-        display: block;
-    }
-
-    .right {
-        position: static;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .container {
-        margin: 50px auto;
-        width: 90%;
-        padding: 30px;
-    }
-
-    .form-group input {
-        width: 100%;
+        padding: 8px;
         font-size: 18px;
-    }
-
-    .container button {
-        width: 100%;
-    }
-}
-
-/* For very small phones */
-@media (max-width: 480px) {
-    .left img {
-        width: 100px;
-    }
-
-    .left div {
-        font-size: 18px;
-    }
-
-    .container h1 {
-        font-size: 20px;
     }
 
     .btn {
+        width: 100%;
+        margin: 10px 0;
         font-size: 16px;
+    }
+
+    .right {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+    .left img {
+        width: 80px;
+    }
+
+    .left div {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 18px;
     }
 }
     </style>
